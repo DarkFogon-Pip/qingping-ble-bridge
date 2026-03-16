@@ -1,0 +1,15 @@
+[Unit]
+Description=Zion BLE Bridge
+After=network-online.target bluetooth.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/zion-ble-bridge.env
+WorkingDirectory=/opt/zion-ble-bridge
+ExecStart=/opt/zion-ble-bridge/.venv/bin/uvicorn zion_ble_bridge.app:app --host ${ZION_BLE_BRIDGE_HOST} --port ${ZION_BLE_BRIDGE_PORT}
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
