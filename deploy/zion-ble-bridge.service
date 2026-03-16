@@ -1,5 +1,5 @@
 [Unit]
-Description=Zion BLE Bridge
+Description=Qingping BLE Bridge
 After=network-online.target bluetooth.service
 Wants=network-online.target
 

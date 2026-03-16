@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "zion-ble-bridge"
+name = "qingping-ble-bridge"
 version = "0.2.0"
 description = "BLE bridge for Qingping alarm clocks — REST API for reading sensors and writing persistent configuration over Bluetooth"
 readme = "README.md"

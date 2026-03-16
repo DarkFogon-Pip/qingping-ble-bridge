@@ -1,4 +1,4 @@
-"""FastAPI application for Zion's host-side BLE bridge."""
+"""FastAPI application for the Qingping BLE bridge."""
 
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ from .devices.qingping.service import (
 def create_app(settings: Settings | None = None) -> FastAPI:
     """Create the bridge application."""
     settings = settings or load_settings()
-    app = FastAPI(title="Zion BLE Bridge", version="0.2.0")
+    app = FastAPI(title="Qingping BLE Bridge", version="0.2.0")
     service = QingpingBridgeService(settings)
     auth_dependency = require_request_auth(settings)
 

@@ -1,1 +1,1 @@
-"""Zion host-side BLE bridge."""
+"""Qingping alarm clock BLE bridge."""

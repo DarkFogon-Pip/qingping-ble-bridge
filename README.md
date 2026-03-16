@@ -1,4 +1,4 @@
-# Zion BLE Bridge
+# Qingping BLE Bridge
 
 A Python REST API bridge for controlling **Qingping Alarm Clocks** (CGC1 / CGD1) over Bluetooth Low Energy. Exposes temperature, humidity, battery, and full device configuration (language, alarms, brightness, night mode, etc.) via a simple HTTP API.
 
@@ -17,8 +17,8 @@ Built for integration with **Home Assistant** via RESTful sensors, but works wit
 
 ```bash
 # Clone and set up
-git clone https://github.com/yourusername/zion-ble-bridge.git
-cd zion-ble-bridge
+git clone https://github.com/DarkFogon-Pip/qingping-ble-bridge.git
+cd qingping-ble-bridge
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
